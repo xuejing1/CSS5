@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>背景的使用</title>
+	<style>
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		div{
+			width: 100px;
+			height: 100px;
+			padding: 10px;
+			border: 5px dashed;
+			background-color: gray;
+		/*	background-clip: padding-box;*/
+			/*background-clip: border-box;*/
+			background-clip: content-box;
+		}
+		li{
+			width: 200px;
+			height: 200px;
+			border: 10px dashed red;
+			margin-bottom: 10px;
+			background-image: url(./2.jpg);
+			margin: 10px auto;
+			list-style: none;
+			background-attachment: scroll;
+			
+		}
+		li:nth-child(1){
+			background-size: 100% 100%;
+		}
+		li:nth-child(2){
+			background-size: 50% auto;
+		}
+		li:nth-child(3){
+			/*background-size: cover;*/
+			background-size: contain;
+		}
+		li:nth-child(4){
+			background-size: 100% 100%;
+             background-origin: padding-box;
+		}li:nth-child(5){
+			background-size: 100% 100%;
+             background-origin: border-box;
+		}li:nth-child(6){
+			background-size: 100% 100%;
+             background-origin: content-box;}
+
+	</style>
+</head>
+<body>
+	<div></div>
+<ul>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+</ul>
+</body>
+</html>
